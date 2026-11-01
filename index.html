@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>miaduan93-rgb · 自我介绍</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e2e8f0;
+      --accent: #38bdf8;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 24px;
+    }
+    .card {
+      max-width: 520px;
+      width: 100%;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 40px 32px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin: 0 auto 20px;
+    }
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    .handle { color: var(--accent); font-weight: 600; margin-bottom: 16px; }
+    p.desc { color: var(--muted); line-height: 1.7; margin-bottom: 24px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 28px; }
+    .tag {
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+    .links { display: flex; gap: 12px; justify-content: center; }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: transform 0.15s, opacity 0.15s;
+    }
+    .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+    .btn-primary { background: var(--accent); color: #0f172a; }
+    .btn-ghost { border: 1px solid var(--muted); color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">👋</div>
+    <h1>你好，我是 miaduan93-rgb</h1>
+    <div class="handle">@miaduan93-rgb</div>
+    <p class="desc">
+      这是我的第一个 GitHub 项目，用来做自我介绍。目前正在学习编程与 Git/GitHub，
+      希望用代码创造有趣的东西。
+    </p>
+    <div class="tags">
+      <span class="tag">🌱 学习中</span>
+      <span class="tag">💻 编程</span>
+      <span class="tag">📖 开源</span>
+    </div>
+    <div class="links">
+      <a class="btn btn-primary" href="https://github.com/miaduan93-rgb" target="_blank" rel="noopener">GitHub 主页</a>
+      <a class="btn btn-ghost" href="mailto:miaduan93@gmail.com">联系我</a>
+    </div>
+  </div>
+</body>
+</html>
